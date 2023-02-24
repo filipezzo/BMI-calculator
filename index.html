@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>BMI calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="./js/script.js" type="module"></script>
+</head>
+
+<body>
+
+  <div class="error">
+    <h2>Type only Numbers</h2>
+  </div>
+
+  <div class="wrapper">
+    <main class="card">
+      <form>
+        <h1 class="title">BMI Calculator</h1>
+        <div class="input-wrapper">
+          <label for="weight">weight(kg)</label>
+          <input id="weight" type="text" placeholder="60">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="height">height(cm)</label>
+          <input id="height" type="text" placeholder="165">
+        </div>
+
+        <button type="submit">
+          Calculate BMI
+          <img src="./assets/arrow-up-right.svg" alt="arrow right">
+        </button>
+      </form>
+    </main>
+  </div>
+
+  <div class="modal-wrapper">
+    <div class="modal card">
+      <h2 class="title">
+        <span></span>
+        <button class="close"><img src="./assets/close.svg" alt="close popup"></button>
+      </h2>
+    </div>
+  </div>
+</body>
+
+</html>
